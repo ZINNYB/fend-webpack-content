@@ -13,11 +13,11 @@ module.exports = {
         loader: "babel-loader",
       },
     ],
-    plugin: [
-      new HtmlWebPackPlugin({
-        template: "./src/client/view/index.html",
-        filename: " ./indexedDB.html",
-      }),
-    ],
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: "./src/client/views/index.html",
+      filename: "index.html",
+    }),
+  ],
 };
